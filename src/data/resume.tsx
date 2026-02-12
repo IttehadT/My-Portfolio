@@ -14,14 +14,14 @@ import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
   name: "Ittehad Ahmed Tausif",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  initials: "IAT",
+  url: "https://github.com/tausif-ittehad", // Updated to a generic placeholder or your GitHub
+  location: "Dhaka, Bangladesh",
+  locationLink: "https://www.google.com/maps/place/Dhaka",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Passionate about leveraging technology to drive innovation and solving challenges to create positive impact.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I am an undergraduate Computer Science Engineer at BRAC University (CGPA 3.90), expected to graduate in 2027. Currently, I serve as a Student Mentor for the First Year Advising Team (FYAT) and an Associate for BRACU Duburi AUV. I am passionate about programming, having skills in Python, Java, and C, and I love building web interfaces.",
   avatarUrl: "/me.png",
   skills: [
     { name: "React", icon: ReactLight },
@@ -34,7 +34,7 @@ export const DATA = {
     { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes },
     { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "C#", icon: Csharp },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
