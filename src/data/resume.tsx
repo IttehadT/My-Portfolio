@@ -12,30 +12,23 @@ import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
+// ----------------------------------------------------------------------------
 import { 
-  SiReact, 
-  SiNextdotjs, 
-  SiTypescript, 
-  SiNodedotjs, 
-  SiPython,
   SiGo,
-  SiPostgresql,
-  SiDocker,
-  SiKubernetes,
-  SiJava,
-  SiCsharp,
   SiMongodb,
-  SiRedis,
   SiCplusplus,
   SiExpress,
-  SiTailwindcss
+  SiTailwindcss,
+  SiVercel,
 } from "react-icons/si";
-
+// ----------------------------------------------------------------------------
+import { Wordpress } from "@/components/ui/svgs/wordpress";
+// ----------------------------------------------------------------------------
 
 export const DATA = {
   name: "Ittehad Ahmed Tausif",
   initials: "IAT",
-  url: "https://github.com/IttehadT/", // Updated to a generic placeholder or your GitHub
+  url: "https://github.com/IttehadT/", 
   location: "Dhaka, Bangladesh",
   locationLink: "https://www.google.com/maps/place/Dhaka",
   description:
@@ -54,19 +47,15 @@ export const DATA = {
     { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes },
     { name: "Java", icon: Java },
-    // { name: "C#", icon: Csharp },
-
-    { name: "React", icon: SiReact },
-    { name: "Next.js", icon: SiNextdotjs },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "Node.js", icon: SiNodedotjs },
-    { name: "Python", icon: SiPython },
-    { name: "C++", icon: SiCplusplus },        // ← Easy to add!
-    // { name: "Java", icon: SiJava },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "MongoDB", icon: SiMongodb },      // ← Easy to add!
-    { name: "Docker", icon: SiDocker },
+    { name: "C#", icon: Csharp },
+    // ----------------------------------------------------------------------------
+    { name: "C++", icon: SiCplusplus },        
+    { name: "MongoDB", icon: SiMongodb },     
     { name: "Express", icon: SiExpress },
+    { name: "TailwindCSS", icon: SiTailwindcss },
+    { name: "Vercel", icon: SiVercel },
+    // ----------------------------------------------------------------------------
+    { name: "WordPress", icon: Wordpress },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
