@@ -36,6 +36,7 @@ export const DATA = {
   summary:
     "I am an undergraduate Computer Science Engineer at BRAC University (CGPA 3.90), expected to graduate in 2027. Currently, I serve as a Student Mentor for the First Year Advising Team (FYAT) and an Associate for BRACU Duburi AUV. I am passionate about programming, having skills in Python, Java, and C, and I love building web interfaces.",
   avatarUrl: "/me.png",
+  
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
