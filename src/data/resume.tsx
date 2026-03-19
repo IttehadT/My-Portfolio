@@ -1,5 +1,10 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+
+// ============================================================================
+// 1. ACTIVE ICONS
+// Process: Import components built manually in the components/ui/svgs folder.
+
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -11,9 +16,14 @@ import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Wordpress } from "@/components/ui/svgs/wordpress";
+// ============================================================================
 
-// ----------------------------------------------------------------------------
-import { 
+// ============================================================================
+// 2. REACT ICONS ALTERNATIVE METHOD
+// Process: Run npm install react-icons. Import icons from the specific pack.
+
+import {
   SiGo,
   SiMongodb,
   SiCplusplus,
@@ -21,14 +31,12 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
-// ----------------------------------------------------------------------------
-import { Wordpress } from "@/components/ui/svgs/wordpress";
-// ----------------------------------------------------------------------------
+// ============================================================================
 
 export const DATA = {
   name: "Ittehad Ahmed Tausif",
   initials: "IAT",
-  url: "https://github.com/IttehadT/", 
+  url: "https://github.com/IttehadT/",
   location: "Dhaka, Bangladesh",
   locationLink: "https://www.google.com/maps/place/Dhaka",
   description:
@@ -36,7 +44,7 @@ export const DATA = {
   summary:
     "I am an undergraduate Computer Science Engineer at BRAC University (CGPA 3.90), expected to graduate in 2027. Currently, I serve as a Student Mentor for the First Year Advising Team (FYAT) and an Associate for BRACU Duburi AUV. I am passionate about programming, having skills in Python, Java, and C, and I love building web interfaces.",
   avatarUrl: "/me.png",
-  
+
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
@@ -49,15 +57,34 @@ export const DATA = {
     { name: "Kubernetes", icon: Kubernetes },
     { name: "Java", icon: Java },
     { name: "C#", icon: Csharp },
-    // ----------------------------------------------------------------------------
-    { name: "C++", icon: SiCplusplus },        
-    { name: "MongoDB", icon: SiMongodb },     
+    { name: "WordPress", icon: Wordpress },
+
+    // ============================================================================
+    // 2. REACT ICONS 
+    { name: "C++", icon: SiCplusplus },
+    { name: "MongoDB", icon: SiMongodb },
     { name: "Express", icon: SiExpress },
     { name: "TailwindCSS", icon: SiTailwindcss },
     { name: "Vercel", icon: SiVercel },
-    // ----------------------------------------------------------------------------
-    { name: "WordPress", icon: Wordpress },
+    // ============================================================================ 
+    
+
+    // ============================================================================
+    // 3. URL BASED ICONS COMMENTED OUT
+    // Process: Create an anonymous function passing props and returning an image tag.
+    // {
+    //   name: "C++",
+    //   icon: (props: any) => (
+    //     <img
+    //     {...props}
+    //     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+    //     alt="C++"
+    //     />
+    //   ),
+    // },
+    // ============================================================================
   ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
