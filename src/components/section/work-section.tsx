@@ -8,8 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { DATA } from "@/data/resume";
-import { ChevronDown, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { ChevronDown } from "lucide-react";
 
 function LogoImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
@@ -44,29 +43,25 @@ export default function WorkSection() {
               <div className="flex items-center gap-x-3 flex-1 min-w-0">
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
+                  {/* --- FIXED company line: removed redundant arrow <span> --- */}
                   <div className="font-semibold leading-none flex items-center gap-2">
                     {work.company}
-                    <span className="relative inline-flex items-center w-3.5 h-3.5">
-                      <ChevronRight
-                        className={cn(
-                          "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-300 ease-out",
-                          "translate-x-0 opacity-0",
-                          "group-hover:translate-x-1 group-hover:opacity-100",
-                          "group-data-[state=open]:opacity-0 group-data-[state=open]:translate-x-0"
-                        )}
-                      />
-                      <ChevronDown
-                        className={cn(
-                          "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-200",
-                          "opacity-0 rotate-0",
-                          "group-data-[state=open]:opacity-100 group-data-[state=open]:rotate-180"
-                        )}
-                      />
-                    </span>
                   </div>
+                  {/* -------------------------------------------------------- */}
                   <div className="font-sans text-sm text-muted-foreground">
                     {work.title}
                   </div>
+                  
+                  {/* --- Keeping the explicit View Details line as the primary interaction indicator --- */}
+                  {work.description && (
+                    <div className="flex items-center gap-1 text-xs font-semibold text-muted-foreground transition-colors mt-1.5 w-fit group-hover:text-primary">
+                      <span className="group-data-[state=open]:hidden">View Details</span>
+                      <span className="hidden group-data-[state=open]:block">Hide Details</span>
+                      <ChevronDown className="size-3 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                    </div>
+                  )}
+                  {/* -------------------------------------------------------------------------------- */}
+
                 </div>
               </div>
               <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
@@ -76,7 +71,7 @@ export default function WorkSection() {
               </div>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
+          <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground mt-2">
             {work.description}
           </AccordionContent>
         </AccordionItem>
@@ -84,4 +79,3 @@ export default function WorkSection() {
     </Accordion>
   );
 }
-
