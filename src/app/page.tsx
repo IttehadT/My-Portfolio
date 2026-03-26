@@ -9,6 +9,10 @@ import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
+import CocurricularSection from "@/components/section/cocurricular-section";
+import AwardsSection from "@/components/section/awards-section";
+import LanguagesSection from "@/components/section/languages-section";
+import HobbiesSection from "@/components/section/hobbies-section";
 import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -71,9 +75,10 @@ export default function Page() {
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
-            {DATA.education.map((education, index) => (
+            {/* {DATA.education.map((education, index) => ( */}
+            {DATA.education.map((education: any, index) => (
               <BlurFade
-                key={education.school}
+                key={education.degree}
                 delay={BLUR_FADE_DELAY * 8 + index * 0.05}
               >
                 <Link
@@ -140,21 +145,48 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="projects">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <ProjectsSection />
         </BlurFade>
       </section>
-      <section id="hackathons">
-        <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
-        </BlurFade>
-      </section>
+
+      {/* The bouncer: Only render if DATA.hackathons exists AND has items inside it */}
+      {DATA.hackathons && DATA.hackathons.length > 0 && (
+        <section id="hackathons">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <HackathonsSection />
+          </BlurFade>
+        </section>
+      )}
+
+      {/* ... Hackathons section is above this ... */}
+
+      <BlurFade delay={BLUR_FADE_DELAY * 14}>
+        <CocurricularSection />
+      </BlurFade>
+
+      <BlurFade delay={BLUR_FADE_DELAY * 16}>
+        <AwardsSection />
+      </BlurFade>
+
+      <BlurFade delay={BLUR_FADE_DELAY * 18}>
+        <LanguagesSection />
+      </BlurFade>
+
+      <BlurFade delay={BLUR_FADE_DELAY * 20}>
+        <HobbiesSection />
+      </BlurFade>
+
+      
+
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
         </BlurFade>
       </section>
+
     </main>
   );
 }
