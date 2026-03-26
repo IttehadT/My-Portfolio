@@ -298,15 +298,15 @@ export const DATA = {
   coCurricular: [
     {
       company: "Robotics Club of BRAC University",
-      href: "", 
-      badges: [],
+      href: "www.crabu.app", 
+      badges: ['Research', 'Management'],
       location: "Dhaka, Bangladesh",
       title: "Apprentice of Research and Project Management",
       logoUrl: "/robu.png", 
       start: "2023",
       end: "Present",
       description: "Collaborated on research initiatives and assisted in managing club projects.",
-      images: [], // Completely optional, left empty here
+      images: [{ title: "Profile Picture", url: '/me.png' }], // Completely optional, left empty here
     },
     {
       company: "BRAC University Computer Club",
@@ -326,7 +326,7 @@ export const DATA = {
     {
       company: "BRAC University Adventure Club",
       href: "",
-      badges: [],
+      badges: ["Leadership"],
       location: "Dhaka, Bangladesh",
       title: "Member of Human Resource",
       logoUrl: "/buac.png", 
@@ -350,7 +350,7 @@ export const DATA = {
     {
       company: "DGBHS Red Crescent Society",
       href: "",
-      badges: [],
+      badges: ['Test'],
       location: "Dhaka, Bangladesh",
       title: "Red Crescent Youth",
       logoUrl: "/redcrescent.png", 
