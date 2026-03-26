@@ -136,11 +136,15 @@ export default function CocurricularSection() {
                                 ))}
                               </div>
                             )}
-                          </div>
+                            </div>
 
-                          <div className="font-sans text-sm text-muted-foreground mt-0.5">
-                            {item.title}
-                          </div>
+                            {/* PROPOSED FIX: Location beside the title */}
+                            <div className="font-sans text-sm text-muted-foreground mt-0.5">
+                                {item.title}
+                            {item.location && (
+                                <div className="mt-1">{item.location}</div>
+                                )}
+                            </div>
                           
                           {item.description && (
                             <div className="flex items-center gap-1 text-xs font-semibold text-muted-foreground transition-colors mt-1.5 w-fit group-hover:text-primary">

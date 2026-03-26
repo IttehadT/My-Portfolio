@@ -129,11 +129,11 @@ export const DATA = {
   work: [
     {
       company: "First Year Advising Team (FYAT)",
-      href: "https://www.bracu.ac.bd/", // You can update this to a specific FYAT page if you want
+      href: "https://www.bracu.ac.bd/", 
       badges: [],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Student Mentor",
-      logoUrl: "/bracu.png", // We will need to add a BRACU logo to your public folder later
+      logoUrl: "/bracu.png", 
       start: "2025",
       end: "Present",
       description:
@@ -141,11 +141,11 @@ export const DATA = {
     },
     {
       company: "Code in Place by Stanford",
-      badges: [],
       href: "https://codeinplace.stanford.edu/",
-      location: "Remote",
+      badges: ["Remote"],
+      // location: "Remote - Stanford, CA",
       title: "Section Leader - Mentor",
-      logoUrl: "/stanford.png", // We will need to add a Stanford logo later
+      logoUrl: "/me.png", 
       start: "2025",
       end: "2025",
       description:
@@ -153,11 +153,11 @@ export const DATA = {
     },
     {
       company: "BRACU Duburi AUV",
-      href: "https://www.facebook.com/bracuduburi/", // Replace with their official website if they have one
+      href: "https://www.facebook.com/bracuduburi/", 
       badges: [],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Associate - Web Design & Development",
-      logoUrl: "/duburi.png", // We will need to add a Duburi logo later
+      logoUrl: "/duburi.png", 
       start: "2023",
       end: "Present",
       description:
@@ -300,7 +300,7 @@ export const DATA = {
       company: "Robotics Club of BRAC University",
       href: "www.crabu.app", 
       badges: ['Research', 'Management'],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Apprentice of Research and Project Management",
       logoUrl: "/robu.png", 
       start: "2023",
@@ -312,7 +312,7 @@ export const DATA = {
       company: "BRAC University Computer Club",
       href: "https://www.bucc.com", // Replace with actual URL if available
       badges: [],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Member of Event Management",
       logoUrl: "/bucc.png", 
       start: "2023",
@@ -327,7 +327,7 @@ export const DATA = {
       company: "BRAC University Adventure Club",
       href: "",
       badges: ["Leadership"],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Member of Human Resource",
       logoUrl: "/buac.png", 
       start: "2023",
@@ -339,7 +339,7 @@ export const DATA = {
       company: "Bangladesh National Cadet Corps",
       href: "",
       badges: [],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Cadet Corporal of 1 BNCC Battalion",
       logoUrl: "/bncc.png", 
       start: "2015",
@@ -351,7 +351,7 @@ export const DATA = {
       company: "DGBHS Red Crescent Society",
       href: "",
       badges: ['Test'],
-      location: "Dhaka, Bangladesh",
+      // location: "Dhaka, Bangladesh",
       title: "Red Crescent Youth",
       logoUrl: "/redcrescent.png", 
       start: "2015",
