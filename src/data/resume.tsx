@@ -281,7 +281,7 @@ export const DATA = {
   ],
 
 
-  hackathons: [
+  // hackathons: [
     // {
     //   title: "Hack Western 5",
     //   dates: "November 23rd - 25th, 2018",
@@ -293,8 +293,10 @@ export const DATA = {
     //   mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
     //   links: [],
     // },
-  ],
-
+  // ],
+  
+  hackathons: [] as any[],
+  
   coCurricular: [
     {
       company: "Robotics Club of BRAC University",
